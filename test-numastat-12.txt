@@ -1,60 +1,4 @@
-                           node0           node1
-numa_hit               437292474       128434564
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             437070174       128433821
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               437326199       128450355
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             437103899       128449612
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               437356508       128463010
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             437134208       128462267
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               437387441       128476716
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             437165141       128475973
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               440138490       129054185
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             439916190       129053442
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               440606258       129069827
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             440383959       129069084
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               443977778       129558768
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             443668083       129558025
-other_node              37643035        18686016
-                           node0           node1
-numa_hit               444428379       129574174
-numa_miss               37420735        18566562
-numa_foreign            18566562        37420735
-interleave_hit            384661          343699
-local_node             444118684       129573431
-other_node              37643035        18686016
-
+================= taskset -c 15 cput 15-20 =======================
 Per-node process memory usage (in MBs) for PID 950282 (a.out)
                            Node 0          Node 1           Total
                   --------------- --------------- ---------------
@@ -894,6 +838,8 @@ Stack                        0.00            0.00            0.00
 Private                      0.00            0.00            0.00
 ----------------  --------------- --------------- ---------------
 Total                        0.00            0.00            0.00
+
+================= taskset -c 15 cput 15-23 =======================
 
 Per-node process memory usage (in MBs) for PID 970382 (a.out)
                            Node 0          Node 1           Total
@@ -1914,6 +1860,8 @@ Stack                        0.00            0.00            0.00
 Private                      0.00            0.00            0.00
 ----------------  --------------- --------------- ---------------
 Total                        0.00            0.00            0.00
+
+================= taskset -c 23 cput 15-23 =======================
 
 Per-node process memory usage (in MBs) for PID 974963 (a.out)
                            Node 0          Node 1           Total
