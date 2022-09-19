@@ -1,10 +1,11 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 int main() {
 int *p;
-for(int i =0 ; i<16*1024*1024;i++) {
+#pragma omp parallel for
+for(int i =0 ; i<100*1024*1024;i++) {
     int inc=1024*sizeof(char);
     p=(int*) calloc(1,inc);
-    if(!p) break;
+    if(!p) printf("error");
     }
 }
